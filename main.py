@@ -18,6 +18,7 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
+    """Вычисляет заблокированный урон."""
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
@@ -28,6 +29,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
+    """Вычисляет какое специальное умение было применено."""
     if char_class == 'warrior':
         return (f'{char_name} применил специальное умение «Выносливость"'
                 f'{80 + 25}»')
